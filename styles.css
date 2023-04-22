@@ -1,0 +1,30 @@
+.body {
+  margin: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 20px 200px;
+  column-gap: 50px;
+  grid-column-gap: 50px;
+  grid-row-gap: 20px;
+  grid-template-columns: repeat(5,20%);
+}
+
+.div {
+  display: block;
+}
+
+.child {
+  background-color:lightgray;
+  border: 1px solid blue;
+}
+
+.child1 {
+  grid-column: 2 / span 3;
+  grid-row-end: 4;
+  grid-row-start: 2;
+  grid-row: 1 / span 2;
+  grid-area: 2 / 1 / span 2 / span 3;
+}
